@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto';
+  margin: 0px;
+}
+
+.header,
+.footer {
+  /* display: flex; */
+  font-weight: bold;
+  color: white;
+  background: #1f2937;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.images img {
+  width: 250px;
+  height: auto;
+}
+
+.subtext {
+  font-size: 10px;
+}
