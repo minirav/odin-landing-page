@@ -1,34 +1,128 @@
+@import 'meyer-reset.css';
+
 /*SETUP*/
 * {
   box-sizing: border-box;
 }
 
-
-header,
-footer,
-main {
-  border: 4px solid red;
+picture {
+  display: block;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+p a,
+li a {
+  display: inline-block;
+  color: blue;
+  text-decoration: underline;
+}
+
 
 section {
   border: 4px solid lime;
 }
 
+/*SETTINGS*/
+html {
+  --black: #333;
+  --white: #efefef;
+  --dark: navy;
+  --light: lighterblue;
+  --color: pink;
+
+}
+
+
+/*DEV STYLES*/
+/* body * {
+  border: 1px solid blue;
+  padding: 2px;
+} */
+
+
 /*STRUCTURE*/
 body {
   display: flex;
   flex-direction: column;
-  border: 10px solid blue;
   min-height: 100vh;
 }
 
 main {
   flex-grow: 1;
-  border: 10px solid pink;
 }
 
 inner-column {
   display: block;
   border: 4px solid orange;
   padding: 10px;
+  /**/
+  width: 98%;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*TYPOGRAPHY*/
+.loud-voice {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: .9;
+}
+
+.calm-voice {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/*COMPONENTS*/
+.button {
+  font-family: sans-serif;
+  display: inline-block;
+  background-color: var(--color);
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+/*MODULES*/
+graphic-diptych {
+  display: block;
+  border: 4px solid dodgerblue;
+}
+
+graphic-diptych text-content {
+  display: block;
+}
+
+graphic-diptych picture {
+  display: block;
+}
+
+@media (min-width: 700px) {
+  graphic-diptych {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+
+  graphic-diptych :is(text-content, picture) {
+    flex-basis: 50%;
+    border: 1px solid;
+  }
+}
+
+.welcome {
+  background-color: var(--dark);
+  color: var(--white);
 }
