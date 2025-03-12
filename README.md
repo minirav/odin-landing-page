@@ -11,3 +11,5 @@ Feb. 3, 2025: restart with new approach from https://perpetual.education/stories
 Feb. 12, 2025: continue new approach and add styles (sticky footer and browser reset!)
 
 Feb, 21, 2025 got the basic layout sorted (css grid for products)
+
+March 12, 2025 truly not interested in mastering front end dev. moving along in odin and will use this as a baseline down the road
